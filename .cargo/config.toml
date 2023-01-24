@@ -1,0 +1,11 @@
+[target.riscv32imc-esp-espidf]
+linker = "ldproxy"
+runner = "espflash --monitor"
+rustflags = ["-C", "default-linker-libraries"]
+
+# [target.riscv32imc-esp-espidf.unstable]
+# build-std = "std,panic_abort"
+
+# [target.riscv32imc-esp-espidf.env]
+# ESP_IDF_VERSION = "release/v4.4"
+
